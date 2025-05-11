@@ -19,4 +19,4 @@ function isStudentPassExam(valuesExam, name) {
     }
 }
  
-exports = { averageExams, isStudentPassExam };
+module.exports = { averageExams, isStudentPassExam };
