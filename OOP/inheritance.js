@@ -16,3 +16,4 @@ class Person extends People{
 
 const tanjiro = new Person("Tanjiro", 25, "SWE");
 console.log(tanjiro.job);
+console.log(tanjiro)
