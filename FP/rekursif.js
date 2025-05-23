@@ -1,8 +1,8 @@
-const countDown = start =>{
+const countDown = start => {
 
     console.log(start);
-    if(start > 0){
-        countDown(start-1)
+    if (start > 0) {
+        countDown(start - 1)
     }
 }
 
