@@ -10,7 +10,7 @@ function greetUser(name){
     }
 }
 
-const userName = prompt('input name');
+const userName = prompt('input name : ');
 greetUser(userName)
 
 function calculateTotal(items){
