@@ -11,3 +11,4 @@ const productMap = new Map([
 ]);
 
 console.log(productMap);
+console.log(productMap.get('cap'));
