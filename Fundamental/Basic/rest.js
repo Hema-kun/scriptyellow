@@ -1,8 +1,8 @@
-function myFunc(...name) {
+function myFun(...name) {
   console.log('name:', name);
 }
 
-myFunc('Rafy', 'Fikri', 'Dimas');
+myFun('Rafy', 'Fikri', 'Dimas');
 
 function myFunc(number, ...name) {
   console.log('number', number);
