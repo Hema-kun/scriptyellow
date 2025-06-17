@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="weightInput">Weight (kg):</label>
+    <input type="number" id="weightInput" />
+    <label for="heightInput">Height (cm):</label>
+    <input type="number" id="heightInput" />
+    <button id="calculateButton">Calculate BMI</button>
+    <p id="bmiResult"></p>
+  </body>
+  <script>
+    const weightInput = document.getElementById("weightInput");
+    const heightInput = document.getElementById("heightInput");
+    const calculateButton = document.getElementById("calculateButton");
+    const bmiResult = document.getElementById("bmiResult");
+
+    calculateButton.addEventListener("click", calculateBMI);
+
+    function calculateBMI() {
+      const weight = Number(weightInput.value);
+      const height = Number(heightInput.value) / 100;
+      const bmi = weight / (height * height);
+      bmiResult.textContent = `Your BMI is ${bmi.toFixed(1)}`;
+    }
+  </script>
+</html>
