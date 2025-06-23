@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulasi Premi Asuransi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Kalkulasi Premi Asuransi</h1>
+
+  <form id="insurance-form">
+    <label>
+      Nama:
+      <input type="text" name="nama" required />
+    </label>
+
+    <label>
+      Usia:
+      <input type="number" name="usia" required min="17" />
+    </label>
+
+    <label>
+      Jenis Kelamin:
+      <select name="gender" required>
+        <option value="">-- Pilih --</option>
+        <option value="pria">Pria</option>
+        <option value="wanita">Wanita</option>
+      </select>
+    </label>
+
+    <label>
+      Jenis Kendaraan:
+      <select name="jenisKendaraan" required>
+        <option value="">-- Pilih --</option>
+        <option value="motor">Motor</option>
+        <option value="mobil">Mobil</option>
+      </select>
+    </label>
+
+    <label>
+      Tahun Kendaraan:
+      <input type="number" name="tahunKendaraan" required min="1990" />
+    </label>
+
+    <button type="submit">Hitung Premi</button>
+  </form>
+
+  <div id="hasil"></div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
